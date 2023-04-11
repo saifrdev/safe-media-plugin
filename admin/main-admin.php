@@ -6,7 +6,7 @@ class SafeMediaDeleteAdminClass
     public function __construct()
     {
         add_action('admin_enqueue_scripts', array($this,'safe_media_uploads_script'));
-        $autoloads = array('post-tag','media-handler');
+        $autoloads = array('post-tag','media-handler','media-endpoint');
         foreach($autoloads as $file) {
             include(SMDL_PLUGIN_DIR . 'admin/includes/'.$file.'.php');
         }
