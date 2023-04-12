@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__) . '/../../../plugins/safe-media-delete/admin/main-admin.php';
+require_once dirname(__FILE__) . './../admin/main-admin.php';
 include_once(ABSPATH.'wp-includes/class-wp-error.php');
 
 class Test_Plugin extends WP_UnitTestCase
